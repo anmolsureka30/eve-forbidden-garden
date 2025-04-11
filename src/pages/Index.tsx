@@ -26,26 +26,26 @@ const Index = () => {
     {
       title: "Signature Cocktails",
       description: "Expertly crafted exotic concoctions that tantalize the senses.",
-      imageSrc: "/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png",
-      imageAlt: "Signature cocktail being poured"
+      imageSrc: "/lovable-uploads/f0f9bce7-dcc2-4d69-96dc-be4e2382ebcd.png",
+      imageAlt: "Signature cocktails at Eve"
     },
     {
-      title: "Ladies Night",
-      description: "Every Wednesday, ladies enjoy special cocktails and exclusive perks.",
-      imageSrc: "https://images.unsplash.com/photo-1613843451161-17f99277598a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      imageAlt: "Ladies enjoying drinks at Eve"
+      title: "Fine Dining",
+      description: "Exquisite culinary creations that celebrate global flavors and local ingredients.",
+      imageSrc: "/lovable-uploads/e6b42b10-d53b-4289-9dfb-cddcf1f69d7b.png",
+      imageAlt: "Beautiful dessert plating at Eve"
     },
     {
-      title: "Live DJs",
-      description: "Weekend vibes with Mumbai's best DJs spinning eclectic beats.",
-      imageSrc: "https://images.unsplash.com/photo-1642114657145-47bdf5d78cb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      imageAlt: "DJ performing at Eve"
+      title: "Elegant Atmosphere",
+      description: "A lush, captivating ambiance that transports you to a world of luxury.",
+      imageSrc: "/lovable-uploads/bf7242ea-9d07-4ef8-b293-1aba1cdbf406.png",
+      imageAlt: "The elegant entrance to Eve Restaurant"
     },
     {
-      title: "Chef's Tasting Menu",
-      description: "A curated journey through our most exquisite culinary creations.",
-      imageSrc: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-      imageAlt: "Gourmet dish from Chef's Tasting Menu"
+      title: "Memorable Experiences",
+      description: "Unforgettable moments shared with friends over exceptional food and drinks.",
+      imageSrc: "/lovable-uploads/37d89383-87f1-4bf3-b93d-1d825ac2959f.png",
+      imageAlt: "Eve branded wine glasses"
     }
   ];
 
@@ -129,8 +129,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="group relative overflow-hidden rounded-md shadow-xl">
               <img 
-                src="/lovable-uploads/a2c7145a-df4c-4111-824b-4b4c5593c95c.png" 
-                alt="Eve Restaurant Interior" 
+                src="/lovable-uploads/bf7242ea-9d07-4ef8-b293-1aba1cdbf406.png" 
+                alt="Eve Restaurant Entrance" 
                 className="w-full h-auto rounded-md shadow-lg transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-eve-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
@@ -224,15 +224,15 @@ const Index = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="overflow-hidden rounded-md shadow-lg group">
                   <img 
-                    src="/lovable-uploads/44b69435-ae39-4cc1-8222-4edaaff45be2.png" 
+                    src="/lovable-uploads/df0bed61-283b-451d-b253-40fa390b7252.png" 
                     alt="Eve's food selection" 
                     className="w-full h-auto rounded-md transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
                 <div className="overflow-hidden rounded-md shadow-lg group mt-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" 
-                    alt="Cocktail at Eve" 
+                    src="/lovable-uploads/e6b42b10-d53b-4289-9dfb-cddcf1f69d7b.png" 
+                    alt="Dessert at Eve" 
                     className="w-full h-auto rounded-md transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -248,7 +248,7 @@ const Index = () => {
       >
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-eve-green/90 to-eve-green/70 z-10"></div>
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1564750497011-ead0ce4b9448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')] bg-cover bg-center z-0 scale-110 animate-slow-pulse"></div>
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/f05fc913-3c45-4354-a32b-e4a819af7cca.png')] bg-cover bg-center z-0 scale-110 animate-slow-pulse"></div>
           
           {/* Subtle Pattern Overlay */}
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-5"></div>

@@ -35,39 +35,39 @@ const Gallery = () => {
     },
     {
       id: 4,
-      title: "Lounge Area",
+      title: "Eve Branded Wine Glasses",
       category: "interiors",
-      imageSrc: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      imageSrc: "/lovable-uploads/37d89383-87f1-4bf3-b93d-1d825ac2959f.png"
     },
     {
       id: 5,
-      title: "Signature Dessert",
+      title: "Gourmet Pizza",
       category: "food",
-      imageSrc: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80"
+      imageSrc: "/lovable-uploads/df0bed61-283b-451d-b253-40fa390b7252.png"
     },
     {
       id: 6,
-      title: "Craft Cocktail",
+      title: "Craft Cocktails",
       category: "cocktails",
-      imageSrc: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+      imageSrc: "/lovable-uploads/f0f9bce7-dcc2-4d69-96dc-be4e2382ebcd.png"
     },
     {
       id: 7,
-      title: "Ladies Night",
-      category: "events",
-      imageSrc: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      title: "Lush Restaurant Entrance",
+      category: "interiors",
+      imageSrc: "/lovable-uploads/bf7242ea-9d07-4ef8-b293-1aba1cdbf406.png"
     },
     {
       id: 8,
-      title: "Chef's Table",
-      category: "events",
-      imageSrc: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      title: "Signature Cheesecake",
+      category: "food",
+      imageSrc: "/lovable-uploads/e6b42b10-d53b-4289-9dfb-cddcf1f69d7b.png"
     },
     {
       id: 9,
-      title: "Gourmet Main Course",
-      category: "food",
-      imageSrc: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+      title: "Festive Interiors",
+      category: "interiors",
+      imageSrc: "/lovable-uploads/f05fc913-3c45-4354-a32b-e4a819af7cca.png"
     },
     {
       id: 10,
@@ -100,7 +100,7 @@ const Gallery = () => {
       <section 
         className="py-28 relative"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(10, 61, 59, 0.8), rgba(10, 61, 59, 0.7)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)`,
+          backgroundImage: `linear-gradient(to bottom, rgba(10, 61, 59, 0.8), rgba(10, 61, 59, 0.7)), url(/lovable-uploads/f0f9bce7-dcc2-4d69-96dc-be4e2382ebcd.png)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -174,9 +174,16 @@ const Gallery = () => {
           </p>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
+            {[
+              "/lovable-uploads/37d89383-87f1-4bf3-b93d-1d825ac2959f.png",
+              "/lovable-uploads/df0bed61-283b-451d-b253-40fa390b7252.png",
+              "/lovable-uploads/bf7242ea-9d07-4ef8-b293-1aba1cdbf406.png",
+              "/lovable-uploads/e6b42b10-d53b-4289-9dfb-cddcf1f69d7b.png",
+              "/lovable-uploads/f05fc913-3c45-4354-a32b-e4a819af7cca.png",
+              "/lovable-uploads/f0f9bce7-dcc2-4d69-96dc-be4e2382ebcd.png"
+            ].map((imageSrc, index) => (
               <a 
-                key={item} 
+                key={index} 
                 href="https://www.instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -184,7 +191,7 @@ const Gallery = () => {
               >
                 <div className="aspect-square">
                   <img 
-                    src={`https://source.unsplash.com/random/300x300?restaurant,interior,food,cocktail&sig=${item}`} 
+                    src={imageSrc} 
                     alt="Instagram post" 
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
