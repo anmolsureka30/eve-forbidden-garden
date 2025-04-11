@@ -114,6 +114,10 @@
     -webkit-text-stroke: 1px theme('colors.eve.rose');
     color: transparent;
   }
+  
+  .glass-card {
+    @apply backdrop-blur-sm bg-black/10 p-8 rounded-lg border border-white/10;
+  }
 }
 
 /* Custom cursor */
@@ -177,4 +181,14 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(239, 175, 155, 0.2);
+}
+
+/* Additional animations */
+@keyframes slow-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+.animate-slow-pulse {
+  animation: slow-pulse 15s ease-in-out infinite;
 }

@@ -53,29 +53,38 @@ const Index = () => {
     <>
       {/* Hero Section */}
       <section 
-        className="min-h-screen flex items-center justify-center relative overflow-hidden bg-eve-black" 
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(26, 26, 26, 0.7), rgba(10, 61, 59, 0.8)), url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
+        className="min-h-screen flex items-center justify-center relative overflow-hidden"
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-eve-black/80 via-eve-black/60 to-eve-green/70"></div>
+        {/* Background Video with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-eve-black/90 via-eve-green/70 to-eve-black/80 z-10"></div>
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')] bg-cover bg-center z-0"></div>
+          
+          {/* Animated Overlay Elements */}
+          <div className="absolute inset-0 z-0 opacity-30">
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-eve-rose/10 animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-eve-green/20 animate-float"></div>
+            <div className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-eve-cream/10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          </div>
+          
+          {/* Subtle Pattern Overlay */}
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-5"></div>
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-playfair font-bold text-eve-cream mb-4">
-            EVE
-          </h1>
-          <p className="text-2xl md:text-3xl text-eve-rose font-playfair mb-8">
-            DISCOVER THE FORBIDDEN LUXE
-          </p>
-          <Link to="/reservations">
-            <Button className="btn-primary text-lg">
-              RESERVE NOW
-            </Button>
-          </Link>
+          <div className="glass-card transform transition-all duration-700 hover:scale-105">
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-playfair font-bold text-eve-cream mb-4 drop-shadow-[0_5px_5px_rgba(0,0,0,0.3)]">
+              EVE
+            </h1>
+            <p className="text-2xl md:text-3xl text-eve-rose font-playfair mb-8 drop-shadow-md">
+              DISCOVER THE FORBIDDEN LUXE
+            </p>
+            <Link to="/reservations">
+              <Button className="btn-primary text-lg">
+                RESERVE NOW
+              </Button>
+            </Link>
+          </div>
           
           {/* Scroll Indicator */}
           {showScrollIndicator && (
@@ -88,8 +97,13 @@ const Index = () => {
       </section>
       
       {/* About Section */}
-      <section className="py-20 bg-eve-cream">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-eve-cream relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-eve-rose/30"></div>
+          <div className="absolute -left-40 bottom-0 w-[30rem] h-[30rem] rounded-full bg-eve-green/20"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="section-title">Welcome to Eve</h2>
             <p className="text-eve-black/80 text-lg">
@@ -98,12 +112,13 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div>
+            <div className="group relative overflow-hidden rounded-md shadow-xl">
               <img 
                 src="/lovable-uploads/a2c7145a-df4c-4111-824b-4b4c5593c95c.png" 
                 alt="Eve Restaurant Interior" 
-                className="w-full h-auto rounded-md shadow-lg"
+                className="w-full h-auto rounded-md shadow-lg transition-transform duration-700 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-eve-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             </div>
             <div className="space-y-6">
               <h3 className="text-3xl font-playfair font-bold text-eve-green">The Garden of Temptation</h3>
@@ -125,8 +140,12 @@ const Index = () => {
       </section>
       
       {/* Highlights Section */}
-      <section className="py-20 bg-eve-green">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-eve-green relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-wood.png')] opacity-10"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-eve-cream mb-4">
               Experience Eve
@@ -152,8 +171,12 @@ const Index = () => {
       </section>
       
       {/* Menu Preview Section */}
-      <section className="py-20 bg-eve-cream">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-eve-cream relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute left-0 top-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/food.png')]"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1">
               <div className="space-y-6 max-w-xl">
@@ -184,16 +207,20 @@ const Index = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="grid grid-cols-2 gap-4">
-                <img 
-                  src="/lovable-uploads/44b69435-ae39-4cc1-8222-4edaaff45be2.png" 
-                  alt="Eve's food selection" 
-                  className="w-full h-auto rounded-md shadow-lg"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" 
-                  alt="Cocktail at Eve" 
-                  className="w-full h-auto rounded-md shadow-lg mt-6"
-                />
+                <div className="overflow-hidden rounded-md shadow-lg group">
+                  <img 
+                    src="/lovable-uploads/44b69435-ae39-4cc1-8222-4edaaff45be2.png" 
+                    alt="Eve's food selection" 
+                    className="w-full h-auto rounded-md transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-md shadow-lg group mt-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" 
+                    alt="Cocktail at Eve" 
+                    className="w-full h-auto rounded-md transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -202,32 +229,36 @@ const Index = () => {
       
       {/* Reservation CTA Section */}
       <section 
-        className="py-28 relative"
-        style={{
-          backgroundImage: `linear-gradient(to right, rgba(10, 61, 59, 0.9), rgba(10, 61, 59, 0.7)), url(https://images.unsplash.com/photo-1564750497011-ead0ce4b9448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
+        className="py-28 relative overflow-hidden"
       >
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-eve-cream mb-6">
-            Join The Garden After Dark
-          </h2>
-          <p className="text-eve-cream/80 text-xl max-w-2xl mx-auto mb-10">
-            Reserve your table now and experience an unforgettable evening of culinary delights and exotic cocktails.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <Link to="/reservations">
-              <Button className="btn-primary text-lg px-10">
-                Reserve Now
-              </Button>
-            </Link>
-            <a href="tel:+919876543210">
-              <Button variant="outline" className="border-eve-cream text-eve-cream hover:bg-eve-cream/10 text-lg px-10">
-                Call Us
-              </Button>
-            </a>
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-r from-eve-green/90 to-eve-green/70 z-10"></div>
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1564750497011-ead0ce4b9448?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')] bg-cover bg-center z-0 scale-110 animate-slow-pulse"></div>
+          
+          {/* Subtle Pattern Overlay */}
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-5"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="dark-glass inline-block px-10 py-12 rounded-lg">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-eve-cream mb-6">
+              Join The Garden After Dark
+            </h2>
+            <p className="text-eve-cream/80 text-xl max-w-2xl mx-auto mb-10">
+              Reserve your table now and experience an unforgettable evening of culinary delights and exotic cocktails.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+              <Link to="/reservations">
+                <Button className="btn-primary text-lg px-10">
+                  Reserve Now
+                </Button>
+              </Link>
+              <a href="tel:+919876543210">
+                <Button variant="outline" className="border-eve-cream text-eve-cream hover:bg-eve-cream/10 text-lg px-10">
+                  Call Us
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
