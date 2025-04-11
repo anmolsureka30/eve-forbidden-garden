@@ -144,6 +144,9 @@ export default {
 				'slide-out-right': 'slide-out-right 0.3s ease-out',
 				'float': 'float 3s ease-in-out infinite',
 				'pulse': 'pulse 2s ease-in-out infinite',
+			},
+			backgroundImage: {
+				'radial-gradient': 'radial-gradient(circle, var(--tw-gradient-stops))',
 			}
 		}
 	},

@@ -55,23 +55,38 @@ const Index = () => {
       <section 
         className="min-h-screen flex items-center justify-center relative overflow-hidden"
       >
-        {/* Background Video with Overlay */}
+        {/* Enhanced Background with Multiple Layers */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-eve-black/90 via-eve-green/70 to-eve-black/80 z-10"></div>
-          <div className="absolute inset-0 bg-[url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')] bg-cover bg-center z-0"></div>
+          {/* Main Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-eve-green/95 via-eve-green/80 to-eve-black/90 z-20 mix-blend-multiply"></div>
           
-          {/* Animated Overlay Elements */}
-          <div className="absolute inset-0 z-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-eve-rose/10 animate-pulse"></div>
-            <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full bg-eve-green/20 animate-float"></div>
-            <div className="absolute top-1/3 right-1/4 w-40 h-40 rounded-full bg-eve-cream/10 animate-pulse" style={{animationDelay: '1s'}}></div>
+          {/* Main Background Image with Parallax Effect */}
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
+          
+          {/* Secondary Textured Overlay */}
+          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-15 mix-blend-overlay"></div>
+          
+          {/* Animated Particle Elements */}
+          <div className="absolute inset-0 z-20 opacity-40">
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-gradient-to-br from-eve-rose/20 to-eve-cream/5 blur-xl animate-float"></div>
+            <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-gradient-to-tl from-eve-green/30 to-eve-cream/10 blur-xl animate-pulse" style={{animationDelay: '2s'}}></div>
+            <div className="absolute top-1/2 right-1/3 w-80 h-80 rounded-full bg-gradient-to-tr from-eve-rose/15 to-transparent blur-xl animate-float" style={{animationDelay: '3s'}}></div>
           </div>
           
-          {/* Subtle Pattern Overlay */}
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-5"></div>
+          {/* Light Beam Effects */}
+          <div className="absolute inset-0 z-30">
+            <div className="absolute top-0 left-1/4 w-1 h-screen bg-gradient-to-b from-eve-cream/30 to-transparent transform rotate-45 blur-md"></div>
+            <div className="absolute top-0 right-1/3 w-0.5 h-screen bg-gradient-to-b from-eve-rose/20 to-transparent transform -rotate-45 blur-md"></div>
+          </div>
+          
+          {/* Subtle Noise Texture */}
+          <div className="absolute inset-0 opacity-5 z-25 bg-[url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png')]"></div>
+          
+          {/* Vignette Effect */}
+          <div className="absolute inset-0 z-25 bg-radial-gradient shadow-inner from-transparent via-transparent to-eve-black/50"></div>
         </div>
         
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-40">
           <div className="glass-card transform transition-all duration-700 hover:scale-105">
             <h1 className="text-7xl md:text-8xl lg:text-9xl font-playfair font-bold text-eve-cream mb-4 drop-shadow-[0_5px_5px_rgba(0,0,0,0.3)]">
               EVE

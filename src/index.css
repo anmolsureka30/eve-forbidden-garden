@@ -192,3 +192,14 @@
 .animate-slow-pulse {
   animation: slow-pulse 15s ease-in-out infinite;
 }
+
+/* Light beam animation */
+@keyframes light-beam {
+  0% { opacity: 0; transform: translateY(-100%) rotate(45deg); }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; transform: translateY(100%) rotate(45deg); }
+}
+
+.animate-light-beam {
+  animation: light-beam 10s ease-in-out infinite;
+}
