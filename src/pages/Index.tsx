@@ -61,7 +61,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-eve-green/95 via-eve-green/80 to-eve-black/90 z-20 mix-blend-multiply"></div>
           
           {/* Main Background Image with Parallax Effect */}
-          <div className="absolute inset-0 bg-[url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
+          <div className="absolute inset-0 bg-[url('https://etimg.etb2bimg.com/photo/111206456.cms')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
           
           {/* Secondary Textured Overlay */}
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-15 mix-blend-overlay"></div>
