@@ -52,7 +52,8 @@ const Navbar = () => {
     <nav 
       className={cn(
         'fixed w-full z-50 transition-all duration-300',
-        isScrolled ? 'dark-glass py-2' : 'bg-transparent py-6',
+        // Changed this line to always have a dark background at the top
+        !isScrolled ? 'dark-glass py-6' : 'dark-glass py-2',
         isVisible ? 'top-0' : '-top-24'
       )}
     >

@@ -100,14 +100,6 @@ const Index = () => {
               </Button>
             </Link>
           </div>
-          
-          {/* Scroll Indicator */}
-          {showScrollIndicator && (
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-eve-cream/70 animate-bounce">
-              <span className="text-sm mb-2">Scroll to explore</span>
-              <ChevronDown className="h-6 w-6" />
-            </div>
-          )}
         </div>
       </section>
       
@@ -269,7 +261,7 @@ const Index = () => {
                 </Button>
               </Link>
               <a href="tel:+919876543210">
-                <Button variant="outline" className="border-eve-cream text-eve-cream hover:bg-eve-cream/10 text-lg px-10">
+                <Button variant="outline" className="border-eve-cream text-eve-cream text-green hover:bg-eve-cream/10 text-lg px-10">
                   Call Us
                 </Button>
               </a>
