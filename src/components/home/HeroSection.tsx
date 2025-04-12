@@ -25,10 +25,10 @@ const HeroSection = () => {
       {/* Enhanced Background with Multiple Layers */}
       <div className="absolute inset-0 z-0">
         {/* Main Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-eve-black/80 via-eve-black/60 to-eve-green/50 z-20 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-eve-green/80 via-eve-green/60 to-eve-black/90 z-20 mix-blend-multiply"></div>
         
         {/* Main Background Image with Parallax Effect */}
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/ba27facb-4a2f-4228-8488-05b883a45004.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/8bc5089c-36fb-4231-a833-37c455a63140.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
         
         {/* Secondary Textured Overlay */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-15 mix-blend-overlay"></div>
@@ -50,11 +50,10 @@ const HeroSection = () => {
         <div className="absolute inset-0 opacity-5 z-25 bg-[url('https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png')]"></div>
         
         {/* Vignette Effect */}
-        <div className="absolute inset-0 z-25 bg-radial-gradient shadow-inner from-transparent via-transparent to-eve-black/70"></div>
+        <div className="absolute inset-0 z-25 bg-radial-gradient shadow-inner from-transparent via-transparent to-eve-black/50"></div>
         
-        {/* Golden Light Glow (to match the golden elements in the cocktail image) */}
+        {/* Golden Light Glow (to match the lantern in the image) */}
         <div className="absolute right-1/4 top-1/4 w-40 h-40 rounded-full bg-yellow-400/20 blur-3xl animate-pulse"></div>
-        <div className="absolute left-1/3 bottom-1/4 w-32 h-32 rounded-full bg-yellow-300/15 blur-2xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
         
         {/* Firefly-like particles */}
         <div className="absolute inset-0 z-40">

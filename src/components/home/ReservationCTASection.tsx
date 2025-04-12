@@ -7,15 +7,14 @@ const ReservationCTASection = () => {
   return (
     <section className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-eve-black/90 to-eve-green/70 z-10"></div>
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/ba27facb-4a2f-4228-8488-05b883a45004.png')] bg-cover bg-center z-0 scale-110 animate-slow-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-eve-green/90 to-eve-green/70 z-10"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/8bc5089c-36fb-4231-a833-37c455a63140.png')] bg-cover bg-center z-0 scale-110 animate-slow-pulse"></div>
         
         {/* Subtle Pattern Overlay */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-5"></div>
         
         {/* Golden Glow Elements */}
         <div className="absolute right-1/4 top-1/3 w-40 h-40 rounded-full bg-yellow-400/20 blur-3xl animate-pulse"></div>
-        <div className="absolute left-1/3 bottom-1/4 w-32 h-32 rounded-full bg-yellow-300/15 blur-2xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
       </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
