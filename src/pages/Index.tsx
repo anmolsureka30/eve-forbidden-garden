@@ -58,10 +58,10 @@ const Index = () => {
         {/* Enhanced Background with Multiple Layers */}
         <div className="absolute inset-0 z-0">
           {/* Main Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-eve-green/75 via-eve-green/60 to-eve-black/80 z-20 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-eve-green/95 via-eve-green/80 to-eve-black/90 z-20 mix-blend-multiply"></div>
           
           {/* Main Background Image with Parallax Effect */}
-          <div className="absolute inset-0 bg-[url('/lovable-uploads/57b9b0f8-36d3-45f6-9f6c-cbe1f2db8c00.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/0491d272-ac12-4613-85f9-1363405b2bbd.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
           
           {/* Secondary Textured Overlay */}
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-15 mix-blend-overlay"></div>
@@ -70,12 +70,12 @@ const Index = () => {
           <div className="absolute inset-0 z-20 opacity-40">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-gradient-to-br from-eve-rose/20 to-eve-cream/5 blur-xl animate-float"></div>
             <div className="absolute bottom-1/3 right-1/4 w-64 h-64 rounded-full bg-gradient-to-tl from-eve-green/30 to-eve-cream/10 blur-xl animate-pulse" style={{animationDelay: '2s'}}></div>
-            <div className="absolute top-1/2 right-1/3 w-80 h-80 rounded-full bg-gradient-to-tr from-purple-500/20 to-transparent blur-xl animate-float" style={{animationDelay: '3s'}}></div>
+            <div className="absolute top-1/2 right-1/3 w-80 h-80 rounded-full bg-gradient-to-tr from-eve-rose/15 to-transparent blur-xl animate-float" style={{animationDelay: '3s'}}></div>
           </div>
           
           {/* Light Beam Effects */}
           <div className="absolute inset-0 z-30">
-            <div className="absolute top-0 left-1/4 w-1 h-screen bg-gradient-to-b from-yellow-100/40 to-transparent transform rotate-45 blur-md"></div>
+            <div className="absolute top-0 left-1/4 w-1 h-screen bg-gradient-to-b from-eve-cream/30 to-transparent transform rotate-45 blur-md"></div>
             <div className="absolute top-0 right-1/3 w-0.5 h-screen bg-gradient-to-b from-eve-rose/20 to-transparent transform -rotate-45 blur-md"></div>
           </div>
           
@@ -84,22 +84,6 @@ const Index = () => {
           
           {/* Vignette Effect */}
           <div className="absolute inset-0 z-25 bg-radial-gradient shadow-inner from-transparent via-transparent to-eve-black/50"></div>
-          
-          {/* Firefly-like particles */}
-          <div className="absolute inset-0 z-40">
-            {[...Array(12)].map((_, index) => (
-              <div 
-                key={index}
-                className="absolute w-1 h-1 bg-yellow-100 rounded-full animate-ping opacity-70"
-                style={{
-                  top: `${Math.random() * 100}%`,
-                  left: `${Math.random() * 100}%`,
-                  animationDuration: `${2 + Math.random() * 3}s`,
-                  animationDelay: `${Math.random() * 2}s`
-                }}
-              ></div>
-            ))}
-          </div>
         </div>
         
         <div className="container mx-auto px-4 text-center relative z-40">
