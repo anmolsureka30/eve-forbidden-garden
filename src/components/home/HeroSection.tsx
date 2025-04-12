@@ -25,10 +25,10 @@ const HeroSection = () => {
       {/* Enhanced Background with Multiple Layers */}
       <div className="absolute inset-0 z-0">
         {/* Main Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-eve-green/75 via-eve-green/60 to-eve-black/80 z-20 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-eve-green/80 via-eve-green/60 to-eve-black/90 z-20 mix-blend-multiply"></div>
         
         {/* Main Background Image with Parallax Effect */}
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/57b9b0f8-36d3-45f6-9f6c-cbe1f2db8c00.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/8bc5089c-36fb-4231-a833-37c455a63140.png')] bg-cover bg-center z-10 transform scale-110 animate-slow-pulse"></div>
         
         {/* Secondary Textured Overlay */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-15 mix-blend-overlay"></div>
@@ -51,6 +51,9 @@ const HeroSection = () => {
         
         {/* Vignette Effect */}
         <div className="absolute inset-0 z-25 bg-radial-gradient shadow-inner from-transparent via-transparent to-eve-black/50"></div>
+        
+        {/* Golden Light Glow (to match the lantern in the image) */}
+        <div className="absolute right-1/4 top-1/4 w-40 h-40 rounded-full bg-yellow-400/20 blur-3xl animate-pulse"></div>
         
         {/* Firefly-like particles */}
         <div className="absolute inset-0 z-40">
